@@ -1,0 +1,9 @@
+﻿#!/bin/bash
+echo "WeCom WxSync Starting... "
+
+source /root/miniconda3/etc/profile.d/conda.sh
+conda activate wecomwxsync
+
+nohup python -u wechat_notify/run_wx_notify.py >> wecom_wxsync.log 2>&1 &
+
+echo "WeCom WxSync Started"

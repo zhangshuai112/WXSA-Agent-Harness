@@ -1,0 +1,7 @@
+langgraph-sdk>=0.2.0
+langgraph>=1.0.0
+python-dotenv>=1.1.1
+fastapi>=0.116.1
+uvicorn>=0.35.0
+pydantic>=2.11.7
+python-jose[cryptography]>=3.3.0

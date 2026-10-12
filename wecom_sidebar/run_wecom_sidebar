@@ -1,0 +1,9 @@
+﻿#!/bin/bash
+echo "WeCom Sidebar Starting... "
+
+source /root/miniconda3/etc/profile.d/conda.sh
+conda activate wecomsidebar
+
+nohup python -u wecom_sidebar_app.py >> wecom_sidebar.log 2>&1 &
+
+echo "WeCom Sidebar Started"

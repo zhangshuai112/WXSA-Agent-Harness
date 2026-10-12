@@ -1,0 +1,9 @@
+﻿#!/bin/bash
+echo "WeCom Admin Starting... "
+
+source /root/miniconda3/etc/profile.d/conda.sh
+conda activate wecomadmin
+
+nohup python -u wecom_admin_app.py >> wecom_admin.log 2>&1 &
+
+echo "WeCom Admin Started"
